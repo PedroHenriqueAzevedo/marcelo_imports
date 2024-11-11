@@ -135,6 +135,35 @@ main {
     box-sizing: border-box; /* Garante que o padding e a borda estejam inclusos na largura */
     text-align: center;
 }
+/* Estilo para o produto esgotado */
+.product-item.esgotado {
+    position: relative; /* Necessário para a posição do aviso "Esgotado" */
+}
+
+.product-item.esgotado::before {
+    content: "Esgotado";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.product-item.esgotado a {
+    pointer-events: none; /* Desabilita o clique no link */
+}
+
+.product-item.esgotado button {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+    pointer-events: none; /* Desabilita o clique no botão */
+}
 
 @media (max-width: 1200px) {
     .product-item {
