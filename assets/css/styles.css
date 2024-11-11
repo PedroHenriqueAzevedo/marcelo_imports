@@ -35,12 +35,15 @@ header {
     margin-right: 20px;
 }
 
-.logo h1 {
-    font-size: 1.5em;
-    margin: 0;
-    text-align: center; /* Centraliza o texto do h1 */
+header h1 {
+    font-size: 2em; /* Ajuste o tamanho conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: center;
     flex: 1; /* Permite que o h1 ocupe todo o espaço disponível */
+    display: flex;
+    justify-content: center; /* Centraliza o texto horizontalmente */
 }
+
 
 .menu-icon {
     cursor: pointer;
@@ -240,4 +243,38 @@ footer p {
 @keyframes blink-caret {
     from, to { border-color: transparent; }
     50% { border-color: white; }
+}
+.contact-box {
+    border: 2px solid #333; /* Cor da borda escura */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas da caixa */
+    background-color: white;
+    color: #333; /* Cor do texto */
+    max-width: 600px;
+    margin: 20px auto; /* Centraliza a caixa */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+}
+
+.contact-box p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    background-color: #555; /* Cor original do botão */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 20px; /* Bordas arredondadas */
+    text-align: center;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.contact-button:hover {
+    background-color: #808080; /* Cor ao passar o mouse */
 }

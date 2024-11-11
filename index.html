@@ -7,34 +7,14 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <script defer src="assets/js/script.js"></script>
     <script defer src="assets/js/banner.js"></script>
+    <script defer src="assets/js/include-header.js"></script> 
+    <script defer src="assets/js/include-footer.js"></script> 
+    <script defer src="assets/js/include-camiseta.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/images/Logo.jpg" alt="Logo Marcelo Imports">
-            
-        </div>
-        <h1>Marcelo Imports</h1>
-        <div class="menu-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="sidebar">
-            <div class="close-icon" onclick="toggleMenu()">
-                <span>&times;</span>
-            </div>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="bone.html"><i class="fas fa-hat-cowboy"></i> Bonés</a></li>
-                <li><a href="camiseta.html"><i class="fas fa-tshirt"></i> Camisetas</a></li>
-                <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+    <header id="header-placeholder"></header> <!-- Contêiner onde o header será inserido -->
     
     <main>
         <h1 class="main-heading">Bem-vindo à Marcelo Imports</h1>
@@ -50,70 +30,8 @@
             </div>
         </section>
 
-        <section class="products">
-            <div class="product-item">
-                <img src="assets/images/produtos/produto1.jpg" alt="Produto 1">
-                <h2>Produto 1</h2>
-                <p>Preço: R$ 100,00</p>
-                <a href="https://wa.me/6282354378?text=Olá, gostaria de mais informações sobre o Produto 1 (Preço: R$ 100,00)." target="_blank">
-                    <button>Mais Informações</button>
-                </a>
-            </div>
-            <div class="product-item">
-                <img src="assets/images/produtos/produto2.jpg" alt="Produto 2">
-                <h2>Produto 2</h2>
-                <p>Preço: R$ 150,00</p>
-                <a href="https://wa.me/6282354378?text=Olá, gostaria de mais informações sobre o Produto 2 (Preço: R$ 150,00)." target="_blank">
-                    <button>Mais Informações</button>
-                </a>
-            </div>
-            <div class="product-item">
-                <img src="assets/images/produtos/produto3.jpg" alt="Produto 3">
-                <h2>Produto 3</h2>
-                <p>Preço: R$ 200,00</p>
-                <a href="https://wa.me/6282354378?text=Olá, gostaria de mais informações sobre o Produto 3 (Preço: R$ 200,00)." target="_blank">
-                    <button>Mais Informações</button>
-                </a>
-            </div>
-            <div class="product-item">
-                <img src="assets/images/produtos/produto1.jpg" alt="Produto 1">
-                <h2>Produto 1</h2>
-                <p>Preço: R$ 100,00</p>
-                <a href="https://wa.me/6282354378?text=Olá, gostaria de mais informações sobre o Produto 1 (Preço: R$ 100,00)." target="_blank">
-                    <button>Mais Informações</button>
-                </a>
-            </div>
-            <div class="product-item">
-                <img src="assets/images/produtos/produto2.jpg" alt="Produto 2">
-                <h2>Produto 2</h2>
-                <p>Preço: R$ 150,00</p>
-                <a href="https://wa.me/6282354378?text=Olá, gostaria de mais informações sobre o Produto 2 (Preço: R$ 150,00)." target="_blank">
-                    <button>Mais Informações</button>
-                </a>
-            </div>
-            <div class="product-item">
-                <img src="assets/images/produtos/produto3.jpg" alt="Produto 3">
-                <h2>Produto 3</h2>
-                <p>Preço: R$ 200,00</p>
-                <a href="https://wa.me/6282354378?text=Olá, gostaria de mais informações sobre o Produto 3 (Preço: R$ 200,00)." target="_blank">
-                    <button>Mais Informações</button>
-                </a>
-            </div>
-        </section>        
+        <section class="products" id="camiseta-placeholder" ></section>        
     </main>
-    <footer>
-        <p>&copy; 2024 Marcelo Imports. Todos os direitos reservados.</p>
-        <div class="social-icons">
-            <a href="https://wa.me/6282354378" target="_blank">
-                <i class="fab fa-whatsapp fa-2x"></i>
-            </a>
-            <a href="https://instagram.com/marcelo_imports2023" target="_blank">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
-        </div>
-    </footer>
+    <footer id="footer-placeholder"></footer>
 </body>
 </html>
