@@ -262,7 +262,7 @@ footer p {
     overflow: hidden;
     animation: typing 3s steps(30, end), blink-caret 0.75s step-end 3;
    
-    font-size: 2.5em; /* Ajuste o tamanho conforme necessário */
+    font-size: 2.2em; /* Ajuste o tamanho conforme necessário */
 }
 
 @keyframes typing {
@@ -307,4 +307,14 @@ footer p {
 
 .contact-button:hover {
     background-color: #808080; /* Cor ao passar o mouse */
+}
+.h1-animado {
+    opacity: 0;
+    transform: translateY(20px); /* Começa um pouco abaixo */
+    transition: opacity 1.5s ease-out, transform 2s ease-out; /* Aumenta a duração para 1.5 segundos */
+}
+
+.h1-animado.visible {
+    opacity: 1;
+    transform: translateY(0); /* Sobe para a posição normal */
 }
